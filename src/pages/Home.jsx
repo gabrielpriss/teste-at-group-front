@@ -17,7 +17,7 @@ function Home() {
       <div className="view">
         <div className='header'>
           <p className='title-tab'>{activeItem}</p>
-          <h2 className='sub-title-tab'>This is the {activeItem}.</h2>
+          <h2 className='sub-title-tab'>{activeItem}</h2>
         </div>
 
         <div>

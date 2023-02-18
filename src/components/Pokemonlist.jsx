@@ -45,7 +45,7 @@ export default function Pokemonlist() {
 
   return (
     <div>
-      <p className='title-tab2'>Clique em algum pokemon para ver seus atributos</p>
+      <p className='title-tab2'>Lista de Pokémons e alguns de seus atributos</p>
       <div className='pageConfig'>
         <div className='pageNumbers'>
           <button className='pageButtons' onClick={handlePrevPage} disabled={currentPage === 1}>Voltar</button>
