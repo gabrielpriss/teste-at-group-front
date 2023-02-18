@@ -6,6 +6,52 @@
   padding-left: 20px;
 }
 
+.pageButtons {
+  border-radius: 10px;
+  margin-left: 10px ;
+  margin-right: 10px ;
+  background-color: #456ad7; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+ }
+
+ .select {
+  background-color: #456ad7;
+  color: white ;
+ }
+
+.pageConfig {
+  display: flex;
+  justify-content: start;
+  margin-left: 1%;
+}
+
+.pageSize {
+  margin-left: 6%;
+  display: flex;
+  /* justify-content: ; */
+}
+
+.select {
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.pageNumbers {
+  display: flex;
+  justify-content: start;
+  margin-left: 20px;
+
+}
+
 .card-bottom {
   position: absolute;
   bottom: 0;
@@ -23,6 +69,7 @@
 }
 
 .sidebar {
+  position: fixed;
   top: 50px;
   color: #fff;
   background-color: #202b37;
@@ -54,6 +101,7 @@
 }
 
 .topbar {
+  /* position: fixed; */
   display: flex;
   align-items: center;
   justify-content: space-between;

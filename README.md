@@ -26,4 +26,6 @@ Projeto Front-end para At Group.
 
   4. Para iniciar a aplicação localmente sem Docker, no diretório raiz do projeto, rode o script responsável por iniciar o React:
   * `npm start`
+
+  Se você não tiver nenhuma outra aplicação rodando nessa porta, o React iniciará na url `http://localhost:3000/`.
 </details>

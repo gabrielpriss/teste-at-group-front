@@ -4,7 +4,7 @@ import Topbar from '../components/Topbar';
 import Pokemonlist from '../components/Pokemonlist';
 
 function Home() {
-  const [activeItem, setActiveItem] = useState('Pokemonlist');
+  const [activeItem, setActiveItem] = useState('Pokemon List');
 
   const handleItemClick = (itemName) => {
     setActiveItem(itemName);
@@ -15,10 +15,13 @@ function Home() {
       <Topbar />
       <Sidebar activeItem={activeItem} handleItemClick={handleItemClick} />
       <div className="view">
-        <p className='title-tab'>{activeItem}</p>
-        <h2 className='sub-title-tab'>This is the {activeItem}.</h2>
+        <div className='header'>
+          <p className='title-tab'>{activeItem}</p>
+          <h2 className='sub-title-tab'>This is the {activeItem}.</h2>
+        </div>
+
         <div>
-        <Pokemonlist />
+          <Pokemonlist />
         </div>
       </div>
     </div>
