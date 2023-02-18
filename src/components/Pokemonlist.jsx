@@ -18,16 +18,6 @@ export default function Pokemonlist() {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
   }
 
-  function handlePokemonClick(pokemon) {
-    axios.get(pokemon.url)
-      .then(response => {
-        setSelectedPokemon(response.data);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }
-
   function eachPokemonType(pokemon) {
     axios.get(pokemon.url)
     .then(response => {
@@ -45,8 +35,8 @@ export default function Pokemonlist() {
       <div className='pokemonDiv'>
         {pokemonList.map(pokemon => (
           <div className='eachPokemon' key={pokemon.name}>
-            <a>
-              <img onClick={() => handlePokemonClick(pokemon)} className='img-pkm' src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.url.match(/\/\d+/)[0].slice(1)}.png`} alt={pokemon.name} />
+            <a href="/#">
+              <img className='img-pkm' src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.url.match(/\/\d+/)[0].slice(1)}.png`} alt={pokemon.name} />
             </a>
             <div>
               <h2 className='pokemon-name'><b>{capitalizeFirstLetter(pokemon.name)}</b></h2>

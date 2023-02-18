@@ -19,10 +19,10 @@ Projeto Front-end para At Group.
   2. Instale as dependências (na raiz do projeto)
     * `npm install`
   
-  3. Para iniciar a aplicação utilizando Docker, na pasta raiz do projeto, rode os script responsáveis por buildar e iniciar o react:
+  3. Para iniciar a aplicação utilizando Docker, na pasta raiz do projeto, rode os script responsáveis por buildar e iniciar o React:
   * `docker build -t my-react-app .`
   * `docker run -p 3000:3000 my-react-app`
 
-  3. Iniciar a aplicação localmente no diretório raiz do projeto rode o script responsável por iniciar o react
+  3. Para iniciar a aplicação localmente sem Docker, no diretório raiz do projeto, rode o script responsável por iniciar o React:
   * `npm start`
 </details>
