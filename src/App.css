@@ -1,17 +1,41 @@
+.app {
+  background-color: #151d23;
+}
+
+.card-bottom-text {
+  padding-left: 20px;
+}
+
+.card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0px;
+  /* background-color: #f7f7f7; */
+  border-top: 1px solid grey;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.sidebar-title {
+  padding-left: 20px ;
+}
+
 .sidebar {
-  background-color: #f2f2f2;
+  top: 50px;
+  color: #fff;
+  background-color: #202b37;
   height: 100vh;
   width: 200px;
   position: fixed;
-  left: 0;
-  top: 0;
-  padding-top: 50px;
+  padding-top: 15px;
 }
 
 .sidebar-item {
   display: block;
   padding: 10px;
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -26,19 +50,71 @@
 .view {
   margin-left: 200px;
   padding: 20px;
+  background-color: #151d23;
 }
 
 .topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #151d23;
   height: 50px;
+  color: #fff;
   padding: 0 20px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
+.pokemonDiv {
+ display: flex;
+ justify-content: space-around;
+ /* flex-direction: column; */
+ 
+ flex-wrap: wrap;
+
+}
+
+.pokemon-name {
+  text-shadow:0px 0px 15px black ;
+  padding-left: 20px;
+  /* text-align: center; */
+}
+
+.img-pkm {
+  box-shadow: 0px 0px 5px black;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom:60px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.img-pkm:hover {
+  cursor: pointer;
+  background-color: #151d23;
+  box-shadow: 0px 0px 15px black;
+  
+}
+
+.eachPokemon {
+  display: flex;
+  position: relative;
+  /* text-align: center; */
+  align-items: center;
+  width: 45%;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #202b37;
+  color: #fff;
+  box-shadow: 0px 0px 5px black;
+}
+
+.title-tab2 {
+  color: #7c8691;
+}
+
 .topbar-left {
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -59,10 +135,12 @@
 
 .topbar button i {
   font-size: 20px;
-  color: #333;
+  color: #fff;
 }
 
 .sidebar-tabs {
+  color: #fff;
+  background-color: #202b37;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -76,17 +154,29 @@
   padding: 10px 0;
   margin: 0;
   border: none;
+  padding-right: 10px;
+  margin-left: 30px;
   background-color: transparent;
   font-size: 16px;
-  color: black;
+  color: #92a0ac;
   cursor: pointer;
 }
 
 .sidebar-tabs button i {
   margin-right: 10px;
+  margin-left: 10px;
+}
+
+.title-tab {
+  color: #727f8b;
+}
+
+.sub-title-tab {
+  color: #fff;
 }
 
 .sidebar-tabs button.active {
-  background-color: grey;
-  color: #333;
+  border-radius: 10px;
+  color: #456ad7;
+  background-color: #151d23;
 }
