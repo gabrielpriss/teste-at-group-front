@@ -18,7 +18,6 @@ export default function Pokemonlist() {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
   }
 
-  const [selectedPokemon, setSelectedPokemon] = useState(null);
   function handlePokemonClick(pokemon) {
     axios.get(pokemon.url)
       .then(response => {
