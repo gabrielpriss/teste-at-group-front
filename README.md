@@ -21,8 +21,8 @@ Projeto Front-end para At Group.
   
   3. Para iniciar a aplicação utilizando Docker, inicie o serviço, e na pasta raiz do projeto, rode os scripts responsáveis por buildar e iniciar o React:
   * ex: `sudo service docker start`
-  * `docker build -t my-react-app .`
-  * `docker run -p 3000:3000 my-react-app`
+  * `docker build -t test-front-atgroup .`
+  * `docker run -p 3000:3000 test-front-atgroup`
 
   4. Para iniciar a aplicação localmente sem Docker, no diretório raiz do projeto, rode o script responsável por iniciar o React:
   * `npm start`
