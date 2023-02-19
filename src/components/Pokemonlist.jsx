@@ -8,7 +8,7 @@ export default function Pokemonlist() {
   const [pokemonPerPage, setPokemonPerPage] = useState(25);
 
   useEffect(() => {
-    axios.get('https://pokeapi.co/api/v2/pokemon?limit=200')
+    axios.get('https://pokeapi.co/api/v2/pokemon?limit=800')
       .then(response => {
         setPokemonList(response.data.results);
       })

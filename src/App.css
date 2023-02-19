@@ -7,10 +7,9 @@
 }
 
 .pageButtons {
-  border-radius: 10px;
-  margin-left: 10px ;
-  margin-right: 10px ;
-  background-color: #456ad7; /* Green */
+  border-radius: 25px;
+  margin: 10px;
+  background-color: #5192f7; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -24,7 +23,7 @@
  }
 
  .select {
-  background-color: #456ad7;
+  background-color: #5192f7;
   color: white ;
  }
 
@@ -49,7 +48,6 @@
   display: flex;
   justify-content: start;
   margin-left: 20px;
-
 }
 
 .card-bottom {
@@ -162,7 +160,8 @@
   position: relative;
   /* text-align: center; */
   align-items: center;
-  width: 45%;
+  width: 30%;
+  height: 45%;
   margin: 10px;
   border-radius: 5px;
   background-color: #202b37;
